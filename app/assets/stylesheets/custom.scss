@@ -1,0 +1,145 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$gray-medium-light: #eaeaea;
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/* Home */
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+#big-name {
+  font-family: 'Varela Round', sans-serif;
+  color: black;
+  font-size: 7.0em;
+}
+
+#home-intro {
+  font-size: 2.0em;
+  font-family: 'Varela Round', sans-serif;
+  margin-top: 70px;
+}
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#logo:hover {
+  color: #D3D3D3;
+  text-decoration: none;
+}
+
+.navbar {
+    background-color: #00BFFF;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#navbar-home {
+  color: white;
+  &:hover {
+    color: #D3D3D3;
+    text-decoration: none;
+  }
+}
+
+#navbar-about {
+  color: white;
+  &:hover {
+    color: #D3D3D3;
+    text-decoration: none;
+  }
+}
+
+/* Homepage button */
+
+.my-personal-button { 
+  color: #ffffff; 
+  background-color: #00BFFF; 
+  border-color: #00BFFF; 
+} 
+ 
+.my-personal-button:hover, 
+.my-personal-button:focus, 
+.my-personal-button:active, 
+.my-personal-button.active, 
+.open .dropdown-toggle.my-personal-button { 
+  color: #ffffff; 
+  background-color: #66d9ff; 
+  border-color: #66d9ff; 
+} 
+ 
+.my-personal-button:active, 
+.my-personal-button.active, 
+.open .dropdown-toggle.my-personal-button { 
+  background-image: none; 
+} 
+ 
+.my-personal-button.disabled, 
+.my-personal-button[disabled], 
+fieldset[disabled] .my-personal-button, 
+.my-personal-button.disabled:hover, 
+.my-personal-button[disabled]:hover, 
+fieldset[disabled] .my-personal-button:hover, 
+.my-personal-button.disabled:focus, 
+.my-personal-button[disabled]:focus, 
+fieldset[disabled] .my-personal-button:focus, 
+.my-personal-button.disabled:active, 
+.my-personal-button[disabled]:active, 
+fieldset[disabled] .my-personal-button:active, 
+.my-personal-button.disabled.active, 
+.my-personal-button[disabled].active, 
+fieldset[disabled] .my-personal-button.active { 
+  background-color: #00BFFF; 
+  border-color: #00BFFF; 
+} 
+ 
+.my-personal-button .badge { 
+  color: #00BFFF; 
+  background-color: #ffffff; 
+}
+
+/* footer */
+
+footer {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 35px;
+    padding-left: 10px;
+    width: 100%;
+    overflow:hidden;
+}
