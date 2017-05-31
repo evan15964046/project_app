@@ -1,28 +1,14 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <%= link_to "CrowdSource", root_path, id: "logo" %>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", root_path, id: "navbar-home" %></li>
-        <li><%= link_to "About", about_path, id: "navbar-about" %></li>
-        <% if logged_in? %>
-          <li class="dropdown">
-            <a href="#" id="navbar-account" class="dropdown-toggle" data-toggle="dropdown">
-              Account <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-              <li><%= link_to "Profile", current_user %></li>
-              <li><%= link_to "Settings", '#' %></li>
-              <li class="divider"></li>
-              <li>
-                <%= link_to "Log out", logout_path, method: :delete %>
-              </li>
-            </ul>
-          </li>
-        <% else %>
-          <li><%= link_to "Log in", login_path, id: "navbar-log-in" %></li>
-        <% end %>
+<nav class="navbar navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="pull-left"><%= link_to "CrowdSource", root_path, id: "logo" %></li>
+        <li><%= link_to "ABOUT", about_path, id: "navbar-about" %></li>
+        <li><%= link_to "NEWS", "#", id: "navbar-news" %></li>
+        <li><%= link_to "CONTACT", "#", id: "navbar-contact" %></li>
+        <li class="social pull-right text-in-navbar"><a href="#" id="navbar-login"><span class="glyphicon glyphicon-log-in"></span> LOG IN</a></li>
       </ul>
-    </nav>
-  </div>
-</header>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

@@ -16,10 +16,15 @@ html {
   box-sizing:         border-box;
 }
 
-/* Home */
+#edit-title {
+  text-align: center;
+}
+
+/* General */
 
 body {
   padding-top: 60px;
+  background-color: white;
 }
 
 section {
@@ -38,84 +43,130 @@ textarea {
   margin-bottom: 10px;
 }
 
+/* Home page */
+
 #big-name {
-  font-family: 'Varela Round', sans-serif;
-  color: black;
-  font-size: 7.0em;
+  display: inline;
+	position: relative;
+	font: 150px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+	color: rgba(0,0,255,0.5);
+	text-align: center;
+	top: 115px;
 }
 
-#home-intro {
-  font-size: 2.0em;
-  font-family: 'Varela Round', sans-serif;
-  margin-top: 70px;
+#big-name:after {
+  content: "CrowdSource";
+	position: absolute; left: 10px; top: 5px;
+	color: rgba(255,0,0,0.5);
+}
+
+#home-blurb {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 3.0em;
+  margin-top: 145px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+/* About page */
+
+#about-title {
+  display: inline;
+	position: relative;
+	font: 60px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+	color: rgba(0,0,255,0.5);
+	text-align: left;
+	top: 100px;
+}
+
+#about-title:after {
+  content: "the story behind CrowdSource";
+	position: absolute; left: 4px; top: 2px;
+	color: rgba(255,0,0,0.5);
 }
 
 /* header */
 
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: white;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  font-family: 'Varela Round', sans-serif;
-}
-
-#logo:hover {
-  color: #D3D3D3;
-  text-decoration: none;
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+  > li {
+    float: none;
+    display: inline-block;
+  }
 }
 
 .navbar {
-    background-color: #00BFFF;
-    border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  background-color: blue;
+  box-shadow: none;
+  border: transparent;
 }
 
-#navbar-home {
+#logo {
   color: white;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
   &:hover {
-    color: #D3D3D3;
-    text-decoration: none;
+    background-color: transparent;
   }
 }
 
 #navbar-about {
   color: white;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
   &:hover {
-    color: #D3D3D3;
-    text-decoration: none;
+    background-color: transparent;
+    text-decoration: underline;
   }
 }
 
-#navbar-account {
+#navbar-news {
   color: white;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
   &:hover {
-    color: #D3D3D3;
-    text-decoration: none;
-  }
-  /* when being clicked */
-  &:active {
-    background-color: #66d9ff;
-  }
-  /* when dropdown menu is engaged */
-  &:focus {
-    background-color: #00BFFF;
+    background-color: transparent;
+    text-decoration: underline;
   }
 }
 
-#navbar-log-in {
+#navbar-contact {
   color: white;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
   &:hover {
-    color: #D3D3D3;
-    text-decoration: none;
+    background-color: transparent;
+    text-decoration: underline;
   }
 }
 
-/* Homepage button */
+#navbar-login {
+  color: white;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  &:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+}
+
+/* Homepage button
 
 .my-personal-button { 
   color: #ffffff; 
@@ -162,6 +213,8 @@ fieldset[disabled] .my-personal-button.active {
   color: #00BFFF; 
   background-color: #ffffff; 
 }
+
+*/
 
 /* footer */
 
