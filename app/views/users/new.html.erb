@@ -18,6 +18,9 @@
   
         <%= f.label :password %>
         <%= f.password_field :password, class: 'form-control' %>
+        
+        <%= f.label :classification, "Description (Entrepreneur, Software Developer, etc.)" %>
+        <%= f.text_field :classification, class: 'form-control' %>
   
         <%= f.label :password_confirmation, "Confirmation" %>
         <%= f.password_field :password_confirmation, class: 'form-control' %>
