@@ -51,16 +51,9 @@ textarea {
 	font: 150px Helvetica, Sans-Serif;
 	letter-spacing: -5px;
 	color: rgba(0,0,255,0.5);
-	text-align: center;
 	top: 115px;
+	text-shadow:-10px -5px 0 rgba(225, 0, 0, 0.5);
 }
-
-#big-name:after {
-  content: "CrowdSource";
-	position: absolute; left: 10px; top: 5px;
-	color: rgba(255,0,0,0.5);
-}
-
 #home-blurb {
   font-family: 'Roboto', sans-serif;
   color: black;
@@ -74,20 +67,57 @@ textarea {
 
 /* About page */
 
+.left {
+  text-align: left;
+}
+
 #about-title {
   display: inline;
 	position: relative;
 	font: 60px Helvetica, Sans-Serif;
-	letter-spacing: -5px;
+	letter-spacing: -2px;
 	color: rgba(0,0,255,0.5);
-	text-align: left;
 	top: 100px;
+	text-shadow:-4px -2px 0 rgba(225, 0, 0, 0.5);
 }
 
-#about-title:after {
-  content: "the story behind CrowdSource";
-	position: absolute; left: 4px; top: 2px;
-	color: rgba(255,0,0,0.5);
+#about-text {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 2.0em;
+  margin-top: 110px;
+  letter-spacing: 2.0px;
+}
+
+/* Login page */
+
+#log-in-title {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 2.5em;
+  margin-top: 50px;
+}
+
+.login-form {
+  font-family: 'Roboto', sans-serif;
+}
+
+#new-user-q {
+  font-size: 1.0em;
+  padding-top: 5px;
+}
+
+/* Signup page */
+
+#signup-title {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 2.5em;
+  margin-top: 50px;
+}
+
+.login-form {
+  font-family: 'Roboto', sans-serif;
 }
 
 /* header */
@@ -115,6 +145,26 @@ textarea {
   font-family: 'Roboto', sans-serif;
   &:hover {
     background-color: transparent;
+  }
+}
+
+#navbar-account {
+  color: white;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  &:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  &:active {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  &:focus {
+    background-color: transparent;
+    text-decoration: underline;
   }
 }
 
@@ -166,22 +216,27 @@ textarea {
   }
 }
 
-/* Homepage button
+/* Homepage button */
 
 .my-personal-button { 
-  color: #ffffff; 
-  background-color: #00BFFF; 
-  border-color: #00BFFF; 
+  color: white; 
+  background-color: blue; 
+  border-color: transparent; 
 } 
  
 .my-personal-button:hover, 
-.my-personal-button:focus, 
+.my-personal-button:focus {
+  color: white;
+  background-color: rgba(0,0,255,0.75);
+  border-color: transparent;
+}
+
 .my-personal-button:active, 
 .my-personal-button.active, 
 .open .dropdown-toggle.my-personal-button { 
-  color: #ffffff; 
-  background-color: #66d9ff; 
-  border-color: #66d9ff; 
+  color: white; 
+  background-color: blue; 
+  border-color: transparent; 
 } 
  
 .my-personal-button:active, 
@@ -205,16 +260,14 @@ fieldset[disabled] .my-personal-button:active,
 .my-personal-button.disabled.active, 
 .my-personal-button[disabled].active, 
 fieldset[disabled] .my-personal-button.active { 
-  background-color: #00BFFF; 
-  border-color: #00BFFF; 
+  background-color: blue; 
+  border-color: transparent; 
 } 
  
 .my-personal-button .badge { 
-  color: #00BFFF; 
-  background-color: #ffffff; 
+  color: blue; 
+  background-color: white; 
 }
-
-*/
 
 /* footer */
 
