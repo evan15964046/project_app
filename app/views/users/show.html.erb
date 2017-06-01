@@ -3,28 +3,37 @@
 <div class="container-fluid" id="side-profile">
   <div class="row">
     <div class="col-lg-3 col-md-3">
-        <div class="panel panel-default">
-          <div class="media">
-            <div id="profile-pic">
-              <%= get_avatar_for(@user) %>
-            </div>
-            <div class="media-body">
-            <h3 class="profile-info"><strong><%= @user.name %></strong></h3>
-            <hr>
-            <h5 class="profile-info"><i class="fa fa-id-card-o" aria-hidden="true"></i><strong> ABOUT</strong></h5>
-            <hr>
-            <p class="profile-info profile-about-info"><i class="fa fa-user" aria-hidden="true"></i> <%= @user.classification %></p>
-            <p class="profile-info profile-about-info"><i class="fa fa-university" aria-hidden="true"></i> UNIVERSITY OF MARYLAND</p>
-            <p class="profile-info profile-about-info"><i class="fa fa-graduation-cap" aria-hidden="true"></i> JUNIOR</p>
-            <hr>
-            <h5 class="profile-info"><i class="fa fa-code" aria-hidden="true"></i><strong> PROFESSIONAL SKILLS</strong></h5>
-            <hr>
-            <p class="profile-info profile-skills-info">java</p>
-            <p class="profile-info profile-skills-info">web development</p>
-            <p class="profile-info profile-skills-info">python</p>
-            </div>
+      <div class="panel panel-default">
+        <div class="media">
+          <div id="profile-pic">
+            <%= get_avatar_for(@user) %>
+          </div>
+          <div class="media-body">
+          <h3 class="profile-info"><strong><%= @user.name %></strong></h3>
+          <hr>
+          <h5 class="profile-info"><i class="fa fa-id-card-o" aria-hidden="true"></i><strong> ABOUT</strong></h5>
+          <hr>
+          <p class="profile-info profile-about-info"><i class="fa fa-user" aria-hidden="true"></i> <%= @user.classification %></p>
+          <p class="profile-info profile-about-info"><i class="fa fa-university" aria-hidden="true"></i> UNIVERSITY OF MARYLAND</p>
+          <p class="profile-info profile-about-info"><i class="fa fa-graduation-cap" aria-hidden="true"></i> JUNIOR</p>
+          <hr>
+          <h5 class="profile-info"><i class="fa fa-code" aria-hidden="true"></i><strong> PROFESSIONAL SKILLS</strong></h5>
+          <hr>
+          <p class="profile-info profile-skills-info">java</p>
+          <p class="profile-info profile-skills-info">web development</p>
+          <p class="profile-info profile-skills-info">python</p>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="col-lg-9 col-md-9">
+      <div class="panel panel-default">
+        <div class="media">
+          <h1 id="posting-title">Create a Project Posting</h1>
+          <br>
+          
+        </div>
+      </div>
     </div>
   </div>
 </div>
