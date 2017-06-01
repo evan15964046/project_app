@@ -1,12 +1,27 @@
 <% provide(:title, @user.name) %>
 
-<div class="row">
-  <div class="col-md-4">
-    <section class="user_info">
-      <h1>
-        <%= get_avatar_for(@user) %>
-        <%= @user.name %>
-      </h1>
-    </section>
+<div class="container-fluid" id="side-profile">
+  <div class="row">
+    <div class="col-lg-3 col-md-3">
+        <div class="panel panel-default">
+          <div class="media">
+            <div class="media-body">
+            <h3 class="profile-info"><strong>Evan Smith</strong></h3>
+            <hr>
+            <h5 class="profile-info"><strong>ABOUT</strong></h5>
+            <hr>
+            <p class="profile-info">Software Engineer & Entrepreneur</p>
+            <p class="profile-info">University of Maryland</p>
+            <p class="profile-info">Junior</p>
+            <hr>
+            <h5 class="profile-info"><strong>PROFESSIONAL SKILLS</strong></h5>
+            <hr>
+            <p class="profile-info">Java</p>
+            <p class="profile-info">Web Development</p>
+            <p class="profile-info">Ruby on Rails</p>
+            </div>
+          </div>
+        </div>
+    </div>
   </div>
 </div>

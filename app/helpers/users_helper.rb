@@ -1,6 +1,6 @@
 module UsersHelper
   
-  def get_avatar_for(user, options: { size: 80 })
+  def get_avatar_for(user, options: { size: 225 })
     size = options[:size]
     email = user.email
     avatar_url = "https://api.adorable.io/avatars/#{size}/#{email}.png"
