@@ -162,6 +162,43 @@ textarea {
   letter-spacing: 1.7px;
 }
 
+#left-column {
+  float: left;
+  width: 411px;
+  border-right: 1px solid #B29999;
+}
+
+#right-column {
+  float: right;
+  width: 400px;
+}
+
+#right-col-content {
+  float: left;
+}
+
+.form-group{
+  margin-top: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1.0px;
+}
+label {
+  font-size: 0.8em;
+  line-height: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.form-control{
+  font-size: 0.8em;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1.0px;
+  text-transform: bold;
+  color: #080808;
+  width: 350px;
+}
+
 /* header */
 
 .navbar-nav {
